@@ -30,3 +30,7 @@ label {
 .hide {
   display: none !important;
 }
+.register:hover{
+  color: white;
+  background-color: #bb423f !important
+}
