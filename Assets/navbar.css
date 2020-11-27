@@ -1,0 +1,105 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.brand-bar {
+  display: flex;
+  padding: 5px 5px 0px 5px;
+}
+nav > .brand-bar > .brand {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+}
+nav > .brand-bar > p,
+nav > .brand-bar > button {
+  font-size: 25px;
+}
+nav > .brand-bar > button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.button-active {
+  background-color: #fff !important;
+  color: #bb423f !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  padding: 10px !important;
+}
+nav > .brand-bar > button:hover {
+  background-color: #fff;
+  color: #bb423f;
+}
+nav .brand-bar > p:nth-child(1) {
+  flex: 1;
+}
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+nav > ul > li {
+  flex-basis: 100%;
+}
+nav > ul > a:hover {
+  background-color: #bb423f;
+  color: #fff;
+  transition: 0.3s all;
+}
+nav > ul > a {
+  font-size: 17px;
+  background-color: transparent;
+  flex-basis: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #bb423f;
+}
+.hide-nav {
+  display: none;
+}
+.button > button:active {
+  background-color: #bb423f;
+  color: #fff;
+  transition: 0.1s all;
+}
+@media only screen and (min-width: 640px) and(max-width:1024px) {
+}
+@media only screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  nav > .brand-bar {
+    flex: 1;
+  }
+  nav > ul {
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: transparent;
+    flex: 2;
+    padding: 15px;
+  }
+  nav > .brand-bar > button {
+    display: none !important;
+  }
+  nav > ul > a {
+    background-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+  }
+  nav > ul > a:hover {
+    color: #bb423f;
+    background-color: #fff;
+  }
+}

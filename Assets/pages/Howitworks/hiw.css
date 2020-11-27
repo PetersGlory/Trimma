@@ -1,0 +1,105 @@
+.wwd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  width: 85%;
+  margin: 20px auto;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.hiw {
+  text-align: center;
+  border-bottom: 3px solid #bb423f;
+}
+.hiw > p {
+  font-size: 30px;
+}
+.wwd-container {
+  display: flex;
+  flex-direction: column;
+}
+.wwd-container > .wwd-container-box {
+  border-bottom: 1px solid #bb423f;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.wwd-container > .wwd-container-box > .text {
+  flex-basis: 80%;
+}
+.wwd-container > .wwd-container-box > .text > h2 {
+  color: #bb423f;
+}
+.wwd-container > .wwd-container-box > .icon {
+  flex-basis: 20%;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 60px;
+  color: #bb423f;
+  text-align: center;
+}
+.wwd-container > .wwd-container-box > i {
+  font-size: 40px;
+  text-align: center;
+}
+.wwd-container > .one > .text > h4 {
+  text-align: center;
+  text-decoration: underline;
+  color: #bb423f;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.wwd-container > .one > .text > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 50px;
+  padding: 10px;
+}
+.wwd-container > .one > .text > ul > li {
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 3px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.wwd-container > .one > .text > ul > li:nth-child(1) {
+  background-color: #f75350;
+}
+.wwd-container > .one > .text > ul > li:nth-child(2) {
+  background-color: #f7d04f;
+}
+.wwd-container > .one > .text > ul > li:nth-child(3) {
+  background-color: #87ff57;
+}
+.button > button {
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #bb423f;
+  /* width: 100px; */
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  color: #bb423f;
+  font-size: 12px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button > button:active {
+  background-color: #bb423f;
+  color: #fff;
+  transition: 0.1s all;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 640px) and(max-width:1024px) {
+}
+@media only screen and (min-width: 1024px) {
+}
