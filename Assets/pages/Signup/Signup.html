@@ -66,12 +66,12 @@
       </div>
       <div class="form-placing">
         <div class="choice">
-          <button id="ChoiceEmployer">Employer</button>
-          <button id="ChoiceEmployee" class="button-notactive">Employee</button>
+          <button id="ChoiceEmployer">Employee</button>
+          <button id="ChoiceEmployee" class="button-notactive">Employer</button>
         </div>
-        <form id="employer" class="" action="signUp.php" method="get">
+        <form id="employer" class="">
           <div class="type">
-            <p>For Employer</p>
+            <p>For Employee</p>
           </div>
           <div>
             <label for="Full name">What's your name?</label>
@@ -90,7 +90,7 @@
               type="email"
               placeholder="name@domain.com"
               name="email"
-              id="email"
+              id="emailE"
             />
           </div>
           <div>
@@ -100,7 +100,7 @@
               type="text"
               name="address"
               placeholder="Address"
-              id="address"
+              id="addressE"
             />
           </div>
           <div>
@@ -116,7 +116,8 @@
           <div>
             <label for="age">How old are you?</label>
             <p class="help info"></p>
-            <select name="age">
+            <select name="age" id="age">
+              <option value=""></option>
               <option value="18yrs">18yrs</option>
               <option value="19yrs">19yrs</option>
               <option value="20yrs">20yrs</option>
@@ -130,7 +131,8 @@
           <div>
             <label for="need"> What service do you need?</label>
             <p class="help info"></p>
-            <select name="work">
+            <select name="work" id="work">
+              <option value=""></option>
               <option value="Vector Art">Vector Art</option>
               <option value="Frontend Developer">Frontend Developer</option>
               <option value="Backend Developer">Backend Developer</option>
@@ -142,20 +144,20 @@
           <div>
             <label for="password">choose a password</label>
             <p class="help password"></p>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="passwordE" />
             <p></p>
           </div>
           <div>
             <label for="password">Retype the password</label>
-            <p class="help passmatch"></p>
-            <input type="password" name="Cpassword" id="password" />
+            <p class="helppassmatch"></p>
+            <input type="password" name="Cpassword" id="CpasswordE" />
           </div>
           <div class="terms">
-            <input type="checkbox" />
+            <input type="checkbox" id="check" />
             <p>I have read the terms and agreement and agreed with it.</p>
           </div>
           <div>
-            <button>Submit</button>
+            <button onclick="regEmployee()">Submit</button>
           </div>
         </form>
         <!--
@@ -164,9 +166,9 @@
         
     
         -->
-        <form id="employee" action="signupE.php" method="get" class="hide">
+        <form id="employee" class="hide">
           <div class="type">
-            <p>For Employee</p>
+            <p>For Employer</p>
           </div>
           <div>
             <label for="Full name">What's your Company's name?</label>
@@ -207,14 +209,14 @@
           <div>
             <label for="password">Retype the password</label>
             <p class="help passmatch"></p>
-            <input type="password" name="Cpassword" id="password" />
+            <input type="password" name="Cpassword" id="Cpassword" />
           </div>
           <div class="terms">
             <input type="checkbox" />
             <p>I have read the terms and agreement and agreed with it.</p>
           </div>
           <div>
-            <button>Submit</button>
+            <button onclick="regEmployer()">Submit</button>
           </div>
         </form>
       </div>

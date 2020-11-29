@@ -84,6 +84,7 @@ nav > ul > a {
     display: flex !important;
     flex-direction: row !important;
     background-color: transparent;
+    transition: 3s;
     flex: 2;
     padding: 15px;
   }
@@ -93,6 +94,7 @@ nav > ul > a {
   nav > ul > a {
     background-color: transparent;
     padding: 5px 10px;
+    transition: 3s;
     cursor: pointer;
     color: #fff;
     text-align: center;
