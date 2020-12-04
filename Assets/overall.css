@@ -8,7 +8,10 @@
   user-select: none;
   list-style-type: none;
 }
-
+.error{
+  color: red;
+  font-family:areal;
+}
 body {
   background-image: linear-gradient(95deg, #bb423f, #da774e);
 }

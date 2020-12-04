@@ -64,6 +64,7 @@
       </div>
       <div class="form-placing">
         <form action="signIn.php" method="get">
+          <div class="response"></div>
           <div>
             <label for="Full name">What's your email address?</label>
             <input
@@ -74,7 +75,7 @@
             />
           </div>
           <div>
-            <label for="password">What's your password?</label>
+            <label for="password">Enter your password?</label>
             <input
               type="password"
               name="password"
@@ -87,12 +88,38 @@
             <p>Remember me</p>
           </div>
           <div class="buttons">
+            <button type="button" onclick="signIn()">Submit</button>
             <a href="#">Forgot Password</a>
-            <button>Submit</button>
           </div>
         </form>
       </div>
     </div>
     <script src="../../flexbox.js"></script>
+    <script src="../../jquery.min.js"></script>
+    <script>
+      // User Login
+      signIn = () =>{
+        let mail, pass, rMe;
+        mail = document.querySelector("#email");
+        pass = document.querySelector("#password");
+        rMe = document.querySelector("#remme");
+
+        if(mail.value !== "" && pass.value !==""){
+          let datas = "mail="+mail.value + "&password="+pass.value;
+          $.ajax({
+            type: "POST",
+            url: "signIn.php",
+            data: datas,
+            cache: false,
+            success: (res)=>{
+              console.log(res);
+            }
+          });
+        return false;
+        }else{
+          document.querySelector("#response").innerHTML = "<p class='error'>You inputted the wrong Email or Password.</p>";
+        }
+      }
+    </script>
   </body>
 </html>
